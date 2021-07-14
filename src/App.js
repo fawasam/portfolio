@@ -1,5 +1,5 @@
 import './App.scss';
-import {BrowserRouter as Router ,Route,Switch} from "react-router-dom"
+import {BrowserRouter as Router } from "react-router-dom"
 import LocomotiveScroll from 'locomotive-scroll';
 
 import Main from './components/main/Main';
@@ -16,6 +16,7 @@ function App() {
       el: document.querySelector('[data-scroll-container]'),
       smooth: true
   });
+  console.log(scroll);
   },[])
 
   return (

@@ -1,7 +1,6 @@
 import React from 'react'
 import "./main.scss"
 //images
-import Dribble from "../../assets/dribble.png"
 import Gmail from "../../assets/gmail.png"
 import Twitter from "../../assets/twitter.png"
 import Linkdein from "../../assets/linkedin.png"

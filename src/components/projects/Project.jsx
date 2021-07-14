@@ -12,7 +12,8 @@ const Project = () => {
         const scroll = new LocomotiveScroll({
           el: document.querySelector('[data-scroll-container]'),
           smooth: true,
-      });
+        });
+        console.log(scroll);
       },[])
     return (
         <div className="project">

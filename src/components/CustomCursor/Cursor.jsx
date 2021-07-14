@@ -5,16 +5,16 @@ import "./cursor.scss"
 
 const Cursor = () => {
     const cursorRef=useRef(null)
-    const secondaryCursor =useRef(null);
-    const positionRef =useRef({
-        mouseX: 0,
-        mouseY: 0,
-        destinationX: 0,
-        destinationY: 0,
-        distanceX: 0,
-        distanceY: 0,
-        key: -1,
-      });
+    // const secondaryCursor =useRef(null);
+    // const positionRef =useRef({
+    //     mouseX: 0,
+    //     mouseY: 0,
+    //     destinationX: 0,
+    //     destinationY: 0,
+    //     distanceX: 0,
+    //     distanceY: 0,
+    //     key: -1,
+    //   });
     useEffect(()=>{
     document.addEventListener("mousemove", (e) => {
         const { clientX, clientY } = e;
