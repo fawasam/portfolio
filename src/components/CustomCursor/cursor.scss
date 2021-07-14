@@ -1,0 +1,50 @@
+.app-cursor{
+    z-index: 100000;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    border: 1px solid black;
+    pointer-events: none;
+    overflow: hidden;
+    transform: translate3d(0,0,0)
+
+}
+.secondary-cursor {
+    z-index: 1000;
+    width: 60px;
+    height: 60px;
+    z-index: 100000;
+    border-radius: 50%;
+    background: hsl(209, 74%, 62%);
+    pointer-events: none;
+    overflow: hidden;
+    transform: translate3d(0,0,0);
+    .cursor-background {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      border: 1px solid black;
+      position: relative;
+      &:after,
+      &:before {
+        content: "";
+        width: 3px;
+        height: 3px;
+        border-radius: 50%;
+        background: white;
+        display: block;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        animation: fadeOut 0.75s cubic-bezier(0.77, 0, 0.175, 1) 0s forwards;
+      }
+      &:before {
+        left: 10px;
+      }
+  
+      &:after {
+        right: 10px;
+      }
+    }
+  }
+  

@@ -1,0 +1,192 @@
+.project{
+    display: flex;
+    align-items: center;
+    // flex-direction: column;
+    width: 100%;
+    height: 0 auto;
+
+    .left{
+        flex: 4;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        h1{
+            font-size: 4.5rem;
+            font-weight: 500;
+        }
+        .image{
+
+            img{
+                border: 1px solid #cfcfcf;
+
+            }
+            .comment{
+                display: flex;
+                position: relative;
+                flex-direction: column;
+                .arrow{
+                    display: flex;
+                    justify-content: flex-end;
+                    z-index: 10;
+                    &:before{
+                      content: "";
+                      position: absolute;
+                      top: 45px;
+                      left: 556px;
+                      background-color: #ECD662;
+                      border-radius: 50%;
+                      width: 65px;
+                      height: 65px;
+                      z-index: -1;
+                      transition: all .3s ease;
+                      transform: scale(0);
+                       transform-origin: center;
+                       display: block;
+              
+                    }
+                }
+                h2{
+                    font-size: 2rem;
+                    font-weight: 400;
+                    margin-bottom: 0;
+                }
+                &:hover{
+                    .arrow{
+                       .icon{
+                        transition: all .3s ease;
+                        transform: rotate(-60deg); 
+                       }
+                        &:before{
+                            transform: scale(1);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+
+    .right{
+        flex: 8;
+        align-items: center;
+        justify-content: flex-end;
+        position: relative;
+        .image{
+            display: flex;
+            flex-direction: column;
+            // align-items: center;
+            margin-left: 60px;
+            img{
+                display: flex;
+                border: 1px solid #cfcfcf;
+                align-items: center;
+                justify-content: flex-end;
+                margin-bottom: 40px;
+                &:last-child{
+                    margin-bottom: 0;
+                }
+            }
+            .comment{
+                margin-bottom: 40px;
+                position: relative;
+                h2{
+                    font-size: 2rem;
+                    font-weight: 400;
+                    margin-bottom: 0;
+                    margin-top: 0;
+                }
+                .arrow{
+                    display: flex;
+                    justify-content: flex-end;
+                    z-index: 10;
+                    &:before{
+                      content: "";
+                      position: absolute;
+                      top: 20px;
+                      left: 556px;
+                      background-color: #ECD662;
+                      border-radius: 50%;
+                      width: 65px;
+                      height: 65px;
+                      z-index: -1;
+                      transition: all .3s ease;
+                      transform: scale(0);
+                       transform-origin: center;
+                       display: block;
+              
+                    }
+                }
+                &:hover{
+                    .arrow{
+                       .icon{
+                        transition: all .3s ease;
+                        transform: rotate(-60deg); 
+                       }
+                        &:before{
+                            transform: scale(1);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .image{
+        width: 600px;
+        img{
+            width:100%;
+            object-fit: cover;
+      
+        }
+        
+    }
+}
+
+@media screen and (max-width:1024px){
+    .project {
+        display: block;
+    }
+    .project .image img {
+
+        margin-left: 111px;
+    }
+    .project .left {
+        text-align: center;
+    }
+    .project .left .image .comment {
+
+        margin-left: 200px;
+        margin-bottom: 50px;
+    }
+    .project .right .image img {
+        margin-left: 50px;
+        margin-bottom: 50px;
+    }
+    .project .right .image .comment {
+        margin-left: 100px;
+        text-align: center;
+    }
+    .main .title {
+        left: 60px;
+    }
+    .main .name {
+        position: absolute;
+        left: 326px;
+    }
+    .main {
+        height: 36vh;
+        display: block;
+    }
+    .main .title span {
+        left: 44px;
+    }
+    .main .fall-twitter {
+        right: 160px;
+        top: 293px;
+        transition: all 0.5s;
+    }
+    .main .fall-gmail {
+        top: -119px;
+        right: 470px;
+    }
+}

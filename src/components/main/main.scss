@@ -1,0 +1,81 @@
+.main{
+    width: 109%;
+    height: 76vh;
+    display: flex;
+    flex-direction: column;
+    margin-top: 140px;
+    position: relative;
+
+  .name{
+      position:absolute;
+      left:200px;
+      span{
+          font-size: 1.5rem;
+          font-weight: 400;
+      }
+  }
+  .title{
+    position:absolute;
+    left:200px;
+      h1{
+          font-size: 6rem;
+          font-weight:500
+      }
+      span{
+          width:100%;
+          position:absolute;
+          left:200px
+      }
+
+  }
+  .falling_icon{
+      position:absolute;
+    //   width:100%;
+    //   height:100%;
+      cursor:pointer;
+      transition:0.5s ease;
+      animation:animate 6s linear infinite;
+      border-radius:50%;
+      img{
+          width:40px;
+        //   height:40px;
+          object-fit:cover;
+          padding:20px;
+      }
+  }
+  .fall-twitter{
+      right:150px;
+      top:200px;
+      transition:all 0.5s;
+      &:hover{
+       background-color:lightblue;  
+      transform: scale(1.5);
+   }
+}
+ .fall-gmail{
+    top: -127px;
+    right: 557px;
+ }
+  @keyframes animate{
+      0%{
+          transform: translateY(0)
+      }
+      50%{
+          transform: translateY(40px) 
+      }
+      100%{
+          transform: translateY(0px) 
+      }
+  }
+}
+.section{
+    position: relative;
+    top: 1200px;
+}
+@media screen and (max-width:1024px){
+    .main .title span {
+        width: 100%;
+        position: absolute;
+        left: 0px;
+    }
+}
